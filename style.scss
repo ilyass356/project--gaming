@@ -1,6 +1,5 @@
 body{
-    background-color: rgb(13, 6, 24);
-   
+    background-color: rgb(13, 6, 24) !important;
 
     
 
@@ -9,7 +8,7 @@ body{
     /*navbar*/
 }
 .navbar{
-    color: white;
+    color: white ;
     display: flex;
     gap: 100px;
     height: 6.8em;
@@ -29,7 +28,7 @@ body{
     }
     .navbar__btn{
         padding: 20px 44px;
-        background:linear-gradient(to right,rgb(255, 42, 0),rgb(228, 4, 206));
+        background:linear-gradient(to right,rgb(255, 42, 0),rgb(228, 4, 206)) ;
         color: white;
         font-size: 1em;
         font-weight: bolder;
@@ -38,6 +37,13 @@ body{
         }
     }
 }
+
+
+    .offcanvas-header{
+        .btn-close{
+            display: none !important;
+        }
+    }
 
 
 
@@ -82,7 +88,7 @@ body{
         color: white;
         font-size: 1em;
         font-weight: bolder;
-        
+        border: none;
         &:hover{
             background:linear-gradient(to left,rgb(255, 42, 0) ,rgb(228, 4, 206) );
         }
@@ -93,19 +99,23 @@ body{
     gap: 4em;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 150px;
     #img-third{
-        padding-top: 5px;
+        padding-top: 8px;
     }
+
 }
+/*
+
+*/
 .about{
     display: flex;
     color: white;
     width: 90%;
     margin: auto;
     gap: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 140px;
     img{
        width:38rem;
     }
@@ -127,6 +137,7 @@ body{
         color: white;
         font-size: 1em;
         font-weight: bolder;
+        border: none;
         &:hover{
             background:linear-gradient(to left,rgb(255, 42, 0) ,rgb(228, 4, 206) );
         }
@@ -137,6 +148,7 @@ body{
         color: white;
         font-size: 1em;
         font-weight: bolder;
+        border: none;
         margin-left: 30px;
         &:hover{
             background:linear-gradient(to left,rgb(255, 42, 0) ,rgb(228, 4, 206) );
@@ -175,6 +187,7 @@ body{
         width: 500px;
         height: 300px;
         margin: 0;
+        text-align: center;
         p{
             color:white;
             font-size: 4.4em;
@@ -187,11 +200,14 @@ body{
             color: white;
             font-size: 1em;
             font-weight: bolder;
-            margin-left: 130px;
+            
             &:hover{
                 background:linear-gradient(to left,rgb(255, 42, 0) ,rgb(228, 4, 206) );
             }   
         }
+    }
+    .bottom__live{
+        display: flex;
     }
 }
 
@@ -242,6 +258,7 @@ body{
     .red{
         color: red;
         font-weight:500;
+        text-decoration: none;
     }
 }
 .bottom{
@@ -278,7 +295,7 @@ body{
     gap: 50px;
     align-items: center;
     color: white;
-
+    margin-top: 140px;
 }
 .left__frog{
     .left__frog--one{
@@ -292,6 +309,7 @@ body{
             font-weight: bold;  
             #june{
                 color: rgb(237, 28, 77);
+
             }
         }
     }
@@ -316,6 +334,7 @@ body{
     .frogger__three{
         color: red;
         margin-top: 0;
+        text-decoration: none;
     }
     .frogger__four{
         display: flex;
@@ -326,6 +345,11 @@ body{
         }
     }
 }
+
+
+
+/*Fighter*/
+
 .fighter{
     text-align: center;
     color: white;
@@ -347,9 +371,6 @@ body{
         display:flex;
         flex-direction:column;
         gap: 5px;
-        .fighter__img--up{
-          
-        }
     }
     .fighter__right{
         display: flex;
@@ -374,9 +395,7 @@ body{
     justify-content:center;
     margin-top: 200px;
     font-size:0.9em;
-    
     margin-bottom: 70px;
-
     .footer__left--one{
         width:16em;
         height: 16em;
@@ -434,3 +453,239 @@ body{
 
 }
 }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+
+
+
+
+
+
+@media (max-width:850px){
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        width: 95%;
+        margin: 0 auto;
+        .navbar__links{
+            a{
+            padding: 3px;
+            font-size:1em;
+        }
+    }
+        .navbar__btn{
+            padding: 5px 10px;
+            font-size: 1.3em;
+    }
+    }
+    .hero{
+        .title{
+        font-size:3em;
+        width:70%;
+        margin:0px 0px 15px 0px;
+        } 
+        .text{
+        width:50%;
+        font-size:1.3em;
+        margin-bottom:40px;
+        line-height: 46px;
+        }
+    
+     }
+     .images{
+        display:flex;
+        gap:2.5em;
+        width:70px;
+        margin: auto;
+        margin-top:160px;
+        margin-bottom: 120px;
+    }
+    .about{
+        display: flex;
+        flex-direction:column;
+        color: white;
+        width: 90%;
+        margin: auto;
+        gap: 10px;
+        
+            img{
+           width:30rem;
+           display: flex;
+           justify-self: center;
+           margin-right: 60px;
+        }
+           .about__hist{
+            text-align: center;
+            .about__hist--title{
+                font-size: 4.2em;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            .about__hist--text{
+                font-size: 1.8em;
+               line-height: 60px;
+               padding-bottom: 40px;
+            }
+    
+            .title__btn{
+            padding: 18px 52px;
+            color: white;
+            font-size: 1.6em;
+            font-weight: bolder;
+            }
+            .text__btn{
+            padding: 18px 31px;
+            color: white;
+            font-size: 1.6em;
+            font-weight: bolder;
+            margin-left: 30px;
+            }
+        }
+    }   
+    
+    .live{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 390px 0px;
+        .live__one{
+            width: 70%;
+            margin:  auto;
+            text-align: center;
+            p{
+                margin-top: 20px;
+                font-size: 5em;
+                line-height: 80px;
+            }
+            button{
+                border: none;
+                font-size: 1.3em;
+            }
+        }
+        .bottom__live{
+            display: flex;
+            justify-content:center;
+            padding-top: 100px;
+
+        }
+    }
+    .frogges{
+        gap: 20px;
+        .left__frog{
+            p{
+                font-size: 1.1em;
+            }
+        }
+    }
+    .frogger{
+        width: 23em;
+    }
+
+
+
+
+
+
+
+
+
+    .fighter__img{
+        display: flex;
+        flex-direction:row;
+        justify-self: center;
+        .fighter__left{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .fighter__img--one{
+                width: 150px;
+                height: 130px;
+            }
+            .fighter__img--two{
+                width: 150px;
+                height:170px;
+            }
+        }
+        .fighter__middle{
+            display: flex;
+            flex-direction: column;
+            .fighter__img--up{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .fighter__img--three{
+                    width: 140px;
+                    height: 140px;
+                }
+                .fighter__img--four{
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+            .fighter__img--five{
+                width: 285px;
+                height: 162px;
+            }
+        }
+            .fighter__right{
+                gap: 5px;
+                .fighter__img--sex{
+                    width: 150px;
+                    height: 150px;
+                }
+                .fighter__img--seven{
+                    width: 150px;
+                    height: 155px;
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+} 
+
+.footer{
+    display: flex;
+    font-size: 0.7em;
+    justify-content: center;
+    padding: 10px 60px;
+    .footer__left--one{
+        padding-right: 20px;
+    }
+
+}
+}
+
+
+
+
+
+
+
